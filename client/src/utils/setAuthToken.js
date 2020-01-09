@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { defaultCipherList } from 'constants';
 
 const setAuthToken = token => {
   if (token) {
