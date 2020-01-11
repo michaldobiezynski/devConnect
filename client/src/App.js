@@ -10,6 +10,7 @@ import setAuthToken from './utils/setAuthToken';
 import PrivateRoute from './components/Routing/PrivateRoute';
 import CreateProfile from './components/profile-form/CreateProfile';
 import AddExperience from './components/profile-form/AddExperience';
+import AddEducation from './components/profile-form/AddEducation';
 import EditProfile from './components/profile-form/EditProfile';
 
 import './App.css';
@@ -50,6 +51,11 @@ const App = () => {
               exact
               path='/add-experience'
               component={AddExperience}
+            />
+            <PrivateRoute
+              exact
+              path='/add-education'
+              component={AddEducation}
             />
           </Switch>
         </section>
